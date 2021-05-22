@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>FCC: Survey Form</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="src/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="src/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="src/favicons/favicon-16x16.png">
+		<link rel="manifest" href="src/favicons/site.webmanifest">
+		<link rel="mask-icon" href="src/favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="src/favicons/favicon.ico">
+		<meta name="msapplication-TileColor" content="#2d89ef">
+		<meta name="msapplication-config" content="src/favicons/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="stylesheet" type="text/css" href="src/css/surveyForm.css">
+	</head>
+
+	<body>
+
+    <div class="container">
+
+      <header class="header">
+        <h1 id="title">Star Wars Fandom Survey</h1>
+        <p id="description">May the Force be with you</p>
+      </header>
+
+      <form id="survey-form">
+        <div class="formGroup">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" class="formControl" type="text" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="formGroup">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" class="formControl" type="email" name="email" placeholder="Enter your Email" required pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\u0022(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\u0022)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])" title="Please enter a valid email address.">
+        </div>
+
+        <div class="formGroup">
+          <label id="number-label" for="number">Age (optional)</label>
+          <input id="number" class="formControl" type="number" name="age" min="12" max="99" placeholder="Age">
+        </div>
+
+        <div class="formGroup">
+          <p>What would you do if you could use the Force?</p>
+          <select id="dropdown" class="formControl" required>
+            <option disabled selected value>Select your answer</option>
+            <option value="worldPeace">Establish world peace</option>
+            <option value="levitate">Make a person levitate</option>
+            <option value="communicate">Communicate with an animal</option>
+            <option value="teleport">Teleport yourself somewhere else</option>
+            <option value="persuade">Persuade a person to do something</option>
+            <option value="revenge">Take revenge on someone</option>
+            <option value="worldDomination">Achieve world domination</option>
+            <option value="other">Something else</option>
+            <option value="noUse">I wouldn't use it</option>
+            <option value="noClue">I don't know</option>
+          </select>
+        </div>
+
+        <div class="formGroup">
+          <p>Would you recommend the Star Wars Movies to a friend?</p>
+          <label class="radio"><input type="radio" name="recommendation" value="definitely" checked>Yee-haw! Definitely!</label>
+          <label class="radio"><input type="radio" name="recommendation" value="maybe" checked>Maybe</label>
+          <label class="radio"><input type="radio" name="recommendation" value="notSure" checked>No way, forget it!</label>
+        </div>
+
+        <div class="formGroup">
+          <p>Which Star Wars spaceship would you like to command?</p>
+          <select id="dropdownFavorite" class="formControl" required>
+            <option disabled selected value>Select your answer</option>
+            <option value="devastator">Devastator</option>
+            <option value="finalizer">Finalizer</option>
+            <option value="milleniumFalcon">Millenium Falcon</option>
+            <option value="razorCrest">Razor Crest</option>
+            <option value="slaveI">Slave I</option>
+            <option value="tieFighter">TIE fighter</option>
+            <option value="starDestroyer">Venator-class Star Destroyer</option>
+            <option value="xWing">X-wing</option>
+          </select>
+        </div>
+
+        <div class="formGroup">
+          <p>Who is your favorite character in Star Wars?</p>
+          <label class="checkbox"><input type="checkbox" name="starWars" value="atAtPilot">AT-AT-Pilot</label>
+          <label class="checkbox"><input type="checkbox" name="starWars" value="atStPilot">AT-ST-Pilot</label>
+          <label class="checkbox"><input type="checkbox" name="starWars" value="bobaFett">Boba Fett</label>
+          <label class="checkbox"><input type="checkbox" name="starWars" value="c3Po">C-3PO</label>
+          <label class="checkbox"><input type="checkbox" name="starWars" value="chewbacca">Chewbacca</label>
+          <label class="checkbox"><input type="checkbox" name="starWars" value="darthMaul">Darth Maul</label>
+          <label class="checkbox"><input type="checkbox" name="starWars" value="darthVader">Darth Vader</label>
+          <label class="checkbox"><input type="checkbox" name="starWars" value="generalGrievous">General Grievous</label>
+          <label class="checkbox"><input type="checkbox" name="starWars" value="hanSolo">Han Solo</label>
+          <label class="checkbox"><input type="checkbox" name="starWars" value="jangoFett">Jango Fett</label>
+          <label class="checkbox"><input type="checkbox" name="starWars" value="jawa">Jawa</label>
+          <label class="checkbox"><input type="checkbox" name="starWars" value="lukeSkywalker">Luke Skywalker</label>
+          <label class="checkbox"><input type="checkbox" name="starWars" value="obiWanKenobi">Obi-Wan Kenobi</label>
+          <label class="checkbox"><input type="checkbox" name="starWars" value="palpatine">Palpatine</label>
+          <label class="checkbox"><input type="checkbox" name="starWars" value="princessLeia">Princess Leia</label>
+          <label class="checkbox"><input type="checkbox" name="starWars" value="r2D2">R2-D2</label>
+          <label class="checkbox"><input type="checkbox" name="starWars" value="stormtrooper">Stormtrooper</label>
+          <label class="checkbox"><input type="checkbox" name="starWars" value="tuskenRaiders">Tusken Raiders</label>
+          <label class="checkbox"><input type="checkbox" name="starWars" value="yoda">Yoda</label>
+        </div>
+
+        <div class="formGroup">
+          <p>Any questions, comments or suggestions?</p>
+          <textarea id="feedback" class="textarea formControl" name="feedback" placeholder="Please enter your feedback here..."></textarea>
+        </div>
+
+        <div class="formGroup">
+          <button id="submit" class="submit" type="submit">Submit</button>
+        </div>
+
+      </form>
+
+			<footer>
+				<h4><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> survey form compiled and coded by ET</h4>
+			</footer>
+
+    </div>
+
+	</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>FCC: Product Landing Page</title>
+
+		<link rel="apple-touch-icon" sizes="180x180" href="src/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="src/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="src/favicons/favicon-16x16.png">
+		<link rel="manifest" href="src/favicons/site.webmanifest">
+		<link rel="mask-icon" href="src/favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="src/favicons/favicon.ico">
+		<meta name="msapplication-TileColor" content="#2d89ef">
+		<meta name="msapplication-config" content="src/favicons/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+
+		<script src="https://kit.fontawesome.com/e9e00aae41.js" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" type="text/css" href="src/css/productLandingPage.css">
+	</head>
+
+	<body>
+
+    <div id="wrap">
+
+      <header id="header">
+        <div id="logo-link">
+          <a href="productLandingPage.html"><img id="header-img" src="https://github.com/e-d-i/images-repo/blob/main/aiDiBaoLogo.png?raw=true" alt="AiDiBao Logo with a dragon head on it">
+          </a>
+        </div>
+
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-item" href="productLandingPage.html">Home</a></li>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+            <li><a class="nav-link" href="#contact">Contact us</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="main">
+				<div class="formControl">
+	        <h1 id="title">Mind-Blowingly Delicious: The Supreme Xiao Long Bao</h1>
+	        <p id="description">Excellence Taste In Every Bite</p>
+	        <p id="slogan">Have some and get lucky today!</p>
+	        <form id="form" action="https://www.freecodecamp.com/email-submit">
+	        <input id="email" type="email" name="email" placeholder="Enter you email" required>
+	        <input id="submit" type="submit" name="submit" value="Get Started">
+	        </form>
+				</div>
+      </section>
+
+			<div id="features">
+	      <section class="features">
+	        <div class="greyBox">
+	          <i class="fab fa-envira"></i>
+	          <p class="boxHeader">Fresh & Handmade Dumplings</p>
+	          	<p>We only use selected quality, fresh and natural ingredients - The best for your health!</p>
+	        </div>
+
+	        <div class="greyBox">
+	          <i class="fas fa-shipping-fast"></i>
+	          <p class="boxHeader">Express Delivery</p>
+	          	<p>Fastest delivery time to ensure you get lucky!</p>
+	        </div>
+
+	        <div class="greyBox">
+	          <i class="far fa-thumbs-up"></i>
+	          <p class="boxHeader">Quality Assurance</p>
+	          	<p>We ensure the best quality to provide best customer experience and satisfaction!</p>
+	        </div>
+      	</section>
+    	</div>
+
+			<section id="catcher">
+				<h2>Got curious? Watch the art of Xiao Long Bao</h2>
+	      <iframe
+					id="video" width="850" height="850" src="https://player.vimeo.com/video/368134511?autoplay=1&amp;autopause=0&amp;title=0&amp;byline=0&amp;playsinline=0&amp;portrait=0" frameborder="0" allowfullscreen>
+				</iframe>
+    	</section>
+
+
+			<div id="pricing">
+        <div class="features">
+        	<div class="greyBox">
+          	<p class="boxHeader menu">Small Bento Box</p>
+           	<p class="priceTag">15€</p>
+           	<p>For Starters</p>
+          	<p>6 x Signature Xiao Long Bao (steamed pork dumplings)</p>
+          	<button type="submit" class="btn">Buy</button>
+          </div>
+
+        	<div class="greyBox">
+	          <p class="boxHeader menu">Medium Bento Box</p>
+	          <p class="priceTag">25€</p>
+	         	<p>For Pure Joy</p>
+	         	<p>12 x Signature Xiao Long Bao (mix of steamed chicken & shrimp dumplings)</p>
+	         	<button type="submit" class="btn">Buy</button>
+        	</div>
+
+		       <div class="greyBox">
+		         <p class="boxHeader menu">Huge Bento Box</p>
+		         <p class="priceTag">50€</p>
+		         <p>Supreme Xiao Long Bao Flagship</p>
+		         <p>35 x Signature Xiao Long Bao of your own choice</p>
+		         <button type="submit" class="btn">Buy</button>
+		       </div>
+      	</div>
+			</div>
+
+			<div id="contact">
+	      <form class="contactForm">
+	      	<h3>How can we help?</h3>
+	        <p>Please get in touch and our customer support team will answer all your questions.</p>
+
+					<div class="contactFormControl">
+		      	<input id="name" type="text" name="name" placeholder="Enter your name" required>
+		      </div>
+
+		      <div class="contactFormControl">
+		      	<input id="email" type="email" name="email" placeholder="Enter your Email" required>
+		      </div>
+
+		     	<div class="contactFormControl">
+		      	<textarea name="comment" placeholder="Enter your message here..."></textarea>
+		      </div>
+
+	      	<div class="contactFormControl">
+		      	<input id="contactSubmit" class="button" type="submit" name="submit" value="Submit">
+		     	</div>
+
+	      </form>
+    	</div>
+
+			<footer>
+    		<h4><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> product landing page compiled and coded by ET</h4>
+      </footer>
+
+    </div>
+
+	</body>
+
+</html>

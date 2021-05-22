@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Verdana, Tahoma, Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #FFF;
+  color: #000;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 309px;
+  height: 100%;
+  background-color: #EEE;
+}
+
+#navbar i {
+  color: #00F;
+  margin-right: 10px;
+  font-size: 50px;
+}
+
+#navbar ul {
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  list-style: none;
+  position: relative;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navbar a:hover{
+  color: #00F;
+}
+
+header {
+  margin: 10px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 309px;
+  padding: 20px;
+}
+
+section article {
+  color: #000;
+  margin: 15px;
+  text-align: justify;
+}
+
+section p {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+section ul a {
+  text-decoration: none;
+  color: #00FF;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  line-height: 2;
+  background-color: #EEE;
+  color: #00FF;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+#References li > a {
+  font-style: italic;
+}
+
+@media only screen and (max-width: 815px) {
+  #navbar {
+    position: absolute;
+    width: 100%;
+    max-height: 275px;
+  }
+
+  #navbar ul {
+    height: 199px;
+    text-align: center;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+  #main-doc header {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #main-doc, #navbar {
+    width: 105%;
+  }
+
+  code {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #main-doc, #navbar {
+    width: 121%;
+  }
+
+  code {
+    margin-left: -4px;
+    margin-right: -4px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #main-doc, #navbar {
+    width: 138%;
+  }
+
+  code {
+    margin-left: -9px;
+    margin-right: -9px;
+  }
+}

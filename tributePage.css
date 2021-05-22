@@ -1,0 +1,485 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Times New Roman", Arial, Tahoma, Verdana, sans-serif;
+  line-height: 1.5;
+  text-align: center;
+  background-color: #FFF;
+  color: #000;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000;
+  color: #FFF;
+}
+
+.flex-item {
+  width: 100%;
+  height: auto;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#title {
+  font-size: 64px;
+  padding-top: 254.25px;
+}
+
+p {
+  font-size: 32px;
+  padding: 40px 20px 40px 20px;
+}
+
+#side-caption {
+  font-size: 20px;
+  text-align: justify;
+  padding: 20px 20px 0 20px;
+}
+
+#scrollDown a {
+  position: absolute;
+  top: 660px;
+  left: 75%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-animation: sdbtn 1.5s infinite;
+          animation: sdbtn 1.5s infinite;
+}
+
+#img-caption {
+  text-align: center;
+  display: none;
+}
+
+@-webkit-keyframes sdbtn {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(1, 1);
+            transform: rotate(-45deg) translate(1, 1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+            transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+@keyframes sdbtn {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(1, 1);
+            transform: rotate(-45deg) translate(1, 1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+            transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+#tribute-info {
+  background: #F0FFFF;
+}
+
+h2 {
+  padding-top: 20px;
+}
+
+ul {
+  width: 50%;
+  margin: 20px auto 20px auto;
+  list-style-position: outside;
+  text-align: justify;
+  font-size: 20px;
+}
+
+li {
+  margin: 16px 0;
+}
+
+.note {
+  width: 50%;
+  margin: 20px auto 20px auto;
+  padding: 0;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.normalText {
+  width: 50%;
+  margin: 20px auto 20px auto;
+  padding: 0;
+  font-size: 20px;
+  text-align: justify;
+}
+
+#quote {
+  width: 100%;
+  margin: 40px auto 10px auto;
+  padding: 0;
+  font-size: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+#backgroundQuote {
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  background-color: #000;
+  color: #FFF;
+}
+
+#citeQuote {
+  font-size: 20px;
+}
+
+h3 {
+  width: 50%;
+  margin: 20px auto 20px auto;
+  text-align: left;
+}
+
+#tribute-link {
+  text-decoration: none;
+}
+
+h4 {
+  padding: 10px 0 10px 0;
+}
+
+h4 > a {
+  text-decoration: none;
+}
+
+@media (max-width: 953px) {
+
+  .flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    max-width: 100%;
+    height: auto;
+  }
+
+  #title {
+    padding-top: 40px;
+  }
+
+  #side-caption {
+    padding-bottom: 80px;
+  }
+
+  #scrollDown a {
+    display: none;
+  }
+
+}
+
+@media (min-width: 954px) {
+
+  #title {
+    padding-top: 40px;
+  }
+
+  #side-caption {
+    padding-bottom: 80px;
+  }
+
+  #scrollDown a {
+    display: none;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  #title {
+    padding-top: 60px;
+  }
+
+  #side-caption {
+    padding-bottom: 80px;
+  }
+
+  #scrollDown a {
+    display: none;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  #title {
+    padding-top: 70px;
+  }
+
+  #side-caption {
+    padding-bottom: 80px;
+  }
+
+  #scrollDown a {
+    display: none;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  #title {
+    padding-top: 160px;
+  }
+
+  #side-caption {
+    padding-bottom: 80px;
+  }
+
+  #scrollDown a {
+    display: block;
+    top: 600px;
+  }
+
+}
+
+@media (min-width: 1280px) {
+
+  #title {
+    padding-top: 220px;
+  }
+
+  #side-caption {
+    padding-bottom: 80px;
+  }
+
+  #scrollDown a {
+    display: block;
+    top: 650px;
+  }
+
+}
+
+@media (min-width: 1440px) {
+
+  #title {
+    padding-top: 260px;
+  }
+
+  #side-caption {
+    padding-bottom: 80px;
+  }
+
+  #scrollDown a {
+    display: block;
+    top: 720px;
+  }
+
+}
+
+@media (min-width: 1600px) {
+
+  #title {
+    padding-top: 320px;
+    font-size: 72px;
+  }
+
+  p {
+    font-size: 36px;
+  }
+
+  #side-caption {
+    padding-bottom: 80px;
+    font-size: 22.5px;
+  }
+
+  #scrollDown a {
+    display: block;
+    top: 800px;
+    width: 27px;
+    height: 27px;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  ul {
+    font-size: 1.8rem;
+  }
+
+  .note {
+    font-size: 1.4rem;
+    margin-top: 40px;
+  }
+
+  .normalText {
+    font-size: 1.8rem;
+    margin: 60px auto 60px auto;
+  }
+
+  #quote {
+    font-size: 1.8rem;
+  }
+
+  #citeQuote {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+  }
+
+}
+
+@media (min-width: 1920px) {
+
+  #title {
+    padding-top: 360px;
+    font-size: 96px;
+  }
+
+  p {
+    font-size: 48px;
+  }
+
+  #side-caption {
+    padding-bottom: 80px;
+    font-size: 30px;
+  }
+
+  #scrollDown a {
+    display: block;
+    top: 970px;
+    width: 36px;
+    height: 36px;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  ul {
+    font-size: 2rem;
+  }
+
+  .note {
+    font-size: 1.5rem;
+    margin-top: 40px;
+  }
+
+  .normalText {
+    font-size: 2rem;
+    margin: 60px auto 60px auto;
+  }
+
+  #quote {
+    font-size: 2rem;
+  }
+
+  #citeQuote {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (min-width: 2560px) {
+
+  #title {
+    padding-top: 380px;
+    font-size: 128px;
+  }
+
+  p {
+    font-size: 64px;
+  }
+
+  #side-caption {
+      font-size: 40px;
+      padding-bottom: 80px;
+    }
+
+  #scrollDown a {
+    display: block;
+    top: 1200px;
+    width: 48px;
+    height: 48px;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  ul {
+    font-size: 2.5rem;
+  }
+
+  .note {
+    font-size: 2rem;
+    margin-top: 40px;
+  }
+
+  .normalText {
+    font-size: 2.5rem;
+    margin: 80px auto 40px auto;
+  }
+
+  #quote {
+    font-size: 2.5rem;
+  }
+
+  #citeQuote {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+}
