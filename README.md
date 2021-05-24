@@ -1,4 +1,6 @@
-# responsive-web-design-certification-projects-on-freecodecamp.org
+# freecodecamp-projects-1
+
+Responsive Web Design Certification Projects on freecodecamp.org
 
 My very first coding projects using plain HTML and CSS.
 
